@@ -1,9 +1,23 @@
 # alias python="python3"
-alias ll="ls -l"
+alias ll="ls -lrth"
+alias ss="cd ~/saveup"
+alias vi="vim"
+alias listening='sudo lsof -i -P | grep -i "listen"'
+function check() {
+  ps ax | grep $1 | grep -v "grep\|check"
+}
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+alias g="git"
+function g() {
+  if [ $# -gt 0 ]; then
+    git "$@"
+  else
+    git status
+  fi
+}
 # {{{
 # Node Completion - Auto-generated, do not touch.
 shopt -s progcomp

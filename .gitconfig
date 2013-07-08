@@ -40,6 +40,7 @@
   sh = show
   uc = reset --soft HEAD^   # undo commit
   br = branch
+  tree = log --graph --oneline --all
  
   pullup = pull upstream master
   pullrup = pull --rebase upstream master
@@ -51,5 +52,5 @@
   pushm = push origin master
   pruneo = fetch origin -p
 [user]
-	name = evanye
+	name = Evan Ye
 	email = applepie31415@gmail.com
