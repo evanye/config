@@ -54,3 +54,5 @@
 [user]
 	name = Evan Ye
 	email = applepie31415@gmail.com
+[push]
+	default = current
