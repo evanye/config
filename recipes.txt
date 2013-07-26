@@ -7,6 +7,7 @@ Table of Contents:
   - Regex
   - SQL (postgres)
   - Bash
+  - Sublime
 
 
 REGEX
@@ -18,6 +19,20 @@ Strip non-alphanumeric characters but keep spaces
 
 SQL
 ===
+
+Import a CSV file into an existing postgres database
+'''
+CREATE TABLE users
+... blah blah
+
+COPY users from '/full/path/to/csv/users.csv' (FORMAT CSV);
+'''
+
+Notes:
+  1. use "COPY users(col1, col2, ...)" if the csv is a subset of the data
+  2. ALTER TABLE users ALTER COLUMN col1 DROP NOT NULL;
+      to get around empty data.
+  3. "\d users" to get constraints of table
 
 A Median(numeric) aggregate function (postgres >= 8.4)
 '''
@@ -75,3 +90,13 @@ CREATE AGGREGATE median(anyelement) (
 
 BASH
 ====
+
+SUBLIME
+=======
+
+Always 2 spaces for indentation:
+Command-, to open preferences.
+Insert: "tab_size" :  2,
+        "translate_tabs_to_spaces": true
+into the JSON
+
