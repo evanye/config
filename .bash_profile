@@ -23,3 +23,8 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 source /Users/Evan/.rvm/scripts/rvm
 export PATH=/usr/local/bin:$PATH
 export PGDATA=/usr/local/var/postgres
+
+function parse_git_branch { 
+   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' 
+} 
+export PS1="\h:\W\$(parse_git_branch) \u$ "
