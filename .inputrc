@@ -1,4 +1,8 @@
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+"\e[1;9D": backward-word
+"\e[1;9C": forward-word
+"\e[1;7D": beginning-of-line
+"\e[1;7C": end-of-line
 set show-all-if-ambiguous on
 set completion-ignore-case on
