@@ -1,4 +1,3 @@
-# alias python="python3"
 alias ll="ls -lrth"
 alias vi="vim"
 alias listening='sudo lsof -i -P | grep -i "listen"'
@@ -11,12 +10,14 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 alias g="git"
 alias gs="git status"
+alias bmt="cd ~/bmt; workon bmt"
+alias bmtinit="export BMT_ENV=local; export BMT_SECRET_KEY=ilovehenrymaltby; export BMT_MYSQL_NAME=bmt; export BMT_MYSQL_USER=root; export BMT_MYSQL_PASSWORD=henrymaltby; export BMT_MYSQL_HOST="
 
 source ~/.git-completion.bash 
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
 
 source /Users/Evan/.rvm/scripts/rvm
-export PATH=/usr/local/bin:$PATH
 
 function parse_git_branch { 
    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' 
