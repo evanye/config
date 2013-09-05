@@ -1,1 +1,0 @@
-/Users/evan/maximum-awesome/vimrc
