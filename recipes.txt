@@ -9,6 +9,8 @@ Table of Contents:
   - Bash
   - Sublime
   - Rails
+  - Google
+  - Vim
 
 
 REGEX
@@ -115,3 +117,15 @@ define scoped method that checks if a column (a DateTiem) falls in a certain dat
       end
     end
   end
+
+GOOGLE
+======
+
+mp3 trick: "love song" -inurl:(htm|html|php) intitle:"index of" +"last modified" +"parent directory" +description +size +(wma|mp3) 
+
+VIM
+===
+
+= autoident
+GG - jump to top of page
+=G - auto indent entire file
