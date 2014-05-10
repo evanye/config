@@ -11,6 +11,7 @@ Table of Contents:
   - Rails
   - Google
   - Vim
+  - Audible
 
 
 REGEX
@@ -129,3 +130,10 @@ VIM
 = autoident
 GG - jump to top of page
 =G - auto indent entire file
+
+AUDIBLE
+=======
+virtual cd rw to burn from iTunes to bin/cue
+use bchunk to get wav
+for i in {1..n}; do bchunk -w woe$i.bin woe$i.cue woe$i-; done
+audacity to convert wav to mp3 (apply chains - mp3 conversion)
