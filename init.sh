@@ -10,4 +10,4 @@ rm -f ~/.vimrc.bundles
 ln -s ~/config/vim/.vimrc.bundles ~/.vimrc.bundles
 
 rm -f ~/.tmux.conf
-ln -s ~/config/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/config/.tmux.conf ~/.tmux.conf
