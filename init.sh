@@ -4,7 +4,7 @@ ln -s ~/config/zsh/.zshrc ~/.zshrc
 rm -f ~/.gitconfig
 ln -s ~/config/git/.gitconfig ~/.gitconfig
 
-rm -f ~/.vimrc.local
-ln -s ~/config/vim/.vimrc.local ~/.vimrc.local
-rm -f ~/.vimrc.bundles.local
-ln -s ~/config/vim/.vimrc.bundles.local ~/.vimrc.bundles.local
+rm -f ~/.vimrc
+ln -s ~/config/vim/.vimrc ~/.vimrc
+rm -f ~/.vimrc.bundles
+ln -s ~/config/vim/.vimrc.bundles ~/.vimrc.bundles

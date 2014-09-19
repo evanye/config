@@ -1,3 +1,0 @@
-Bundle 'vim-scripts/JavaRun'
-Bundle 'vim-scripts/SearchComplete'
-Bundle 'christoomey/vim-tmux-navigator'

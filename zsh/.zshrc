@@ -78,6 +78,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias vi="vim"
 alias server="python -m SimpleHTTPServer 8000"
+alias 162="cd ~/Dropbox/Homework/CS162/"
+alias 188="cd ~/Dropbox/Homework/CS188/"
+alias 126="cd ~/Dropbox/Homework/EE126/"
 function check() {
   ps ax | grep $1 | grep -v "grep\|check"
 }
@@ -88,3 +91,4 @@ bindkey "^R" history-incremental-search-backward
 # make search up and down work, so partially type and hit up/down to find relevant stuff
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
+export PATH=/usr/local/bin:$PATH
