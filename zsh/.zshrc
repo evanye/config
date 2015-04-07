@@ -51,9 +51,7 @@ plugins=(brew osx git tmux vi-mode)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -78,9 +76,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias vi="vim"
 alias server="python -m SimpleHTTPServer 8000"
-alias 162="cd ~/Dropbox/Homework/CS162/"
-alias 188="cd ~/Dropbox/Homework/CS188/"
-alias 126="cd ~/Dropbox/Homework/EE126/"
+alias 189="cd ~/Dropbox/Homework/CS189/"
+alias 270="cd ~/Dropbox/Homework/CS270/"
+alias 274="cd ~/Dropbox/Homework/CS274/"
+
 function check() {
   ps ax | grep $1 | grep -v "grep\|check"
 }
@@ -91,4 +90,7 @@ bindkey "^R" history-incremental-search-backward
 # make search up and down work, so partially type and hit up/down to find relevant stuff
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+
 export PATH=/usr/local/bin:$PATH
